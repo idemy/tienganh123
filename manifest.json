@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Tienganh123 VIP",
+  "description": "Học toàn bộ website",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": {
+      "16": "images/icon16.png"
+    }
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "cookies",
+    "history",
+    "cookies",
+    "tabs",
+    "browsingData",
+    "*://*/*"
+  ],
+  "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'",
+  "background": {
+    "persistent": true,
+    "scripts": ["background.js"]
+  },
+  "web_accessible_resources": [
+     "sources/function.js",
+     "sources/function_final.js",
+     "sources/libs_async.js"
+  ]
+}
